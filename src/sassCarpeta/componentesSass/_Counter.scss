@@ -1,0 +1,32 @@
+.counter {
+  width: 50%;
+  background-color: rgb(89, 0, 255);
+  background-image: -webkit-radial-gradient( top left, rgb(89, 0, 255), rgb(5, 1, 71) );
+  border-radius: 25px;
+  padding: 2%;
+  box-sizing: border-box;
+  margin: 4%;
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    button {
+      font-size: 2rem;
+      height: 50px;
+    }
+    p {
+      font-size: 2rem;
+      background-color: white;
+      color: black;
+      border-radius: 50px 50px;
+      padding: 1%;
+    }
+  }
+
+  .agregar__carrito {
+    font-size: 1.2rem;
+    padding: 1%;
+  }
+}

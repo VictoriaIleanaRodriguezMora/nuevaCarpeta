@@ -1,0 +1,58 @@
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 4%;
+  height: 80vh;
+  box-sizing: border-box;
+  background-image: linear-gradient(rgb(115, 0, 255) 30%, blue);
+
+  form {
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    padding: 2%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    @media screen and (max-width: 700px) {
+      width: 90%;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 3%;
+      box-shadow: 5px 5px 5px black;
+      border: 2px solid black;
+      padding: 2%;
+      width: 80%;
+      border-radius: 15px;
+      label,
+      input {
+        text-align: center;
+        width: 99%;
+        @media screen and (max-width: 500px) {
+          width: 90%;
+        }
+      }
+
+      &::placeholder {
+        font-size: 1em;
+      }
+    }
+    .CartItemMsg {
+      display: flex;
+      align-items: center;
+      @media screen and( max-width: 500px) {
+        font-size: 1.2em;
+      }
+      @media screen and( max-width: 300px) {
+        font-size: 1em;
+      }
+    }
+  }
+}
