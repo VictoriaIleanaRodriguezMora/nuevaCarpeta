@@ -47,6 +47,7 @@
       border-radius: 25px;
       box-sizing: border-box;
       padding: 1%;
+      background-image: -webkit-radial-gradient(bottom right, rgb(16, 0, 59), black);
       @media screen and (max-width: 1136px) {
         width: 22em;
         height: 32em;

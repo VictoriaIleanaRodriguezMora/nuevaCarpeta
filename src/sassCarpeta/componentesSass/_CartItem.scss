@@ -1,13 +1,22 @@
 //Cart
-.CartItem__div {
+.CartItem__section {
+  background-image: linear-gradient(rgb(115, 0, 255) 30%, blue);
+  padding: 1%;
+  box-sizing: border-box;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
   align-items: center;
-  padding: 4%;
-  box-sizing: border-box;
-  background-image: linear-gradient(rgb(115, 0, 255) 30%, blue);
+  align-content: center;
+}
+.CartItem__div {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  width: 100%;
 }
 //Cart
 
@@ -47,12 +56,16 @@
   border: 3px solid black;
   border-radius: 15px;
   background-color: white;
+  height: 20%;
   li {
     text-align: center;
     width: 20%;
     padding: 1%;
     font-size: 1.5em;
     border-right: 1px solid black;
+    @media screen and (max-width: 1000px) {
+      font-size: 1.2em;
+    }
   }
 }
 
@@ -60,10 +73,10 @@
 .generarOrden {
   width: 30%;
   background-color: white;
-  font-size: 1.5em;
+  font-size: 2em;
   text-decoration: none;
   border-radius: 25px;
-  margin: 5% 5%;
+  margin: 0%;
   color: black;
   box-shadow: 5px 5px 5px black;
   border: 2px solid black;

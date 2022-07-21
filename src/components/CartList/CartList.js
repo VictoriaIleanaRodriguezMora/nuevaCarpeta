@@ -6,19 +6,22 @@ import { useContext } from "react"
 const CartList = () => {
     const { cart } = useContext(CartContext)
     return (
-
-        <div className="CartItem__div">
-            <ul className="CartItem__categorias">
-                <li>Producto</li>
-                <li>Cantidad</li>
-                <li>Precio</li>
-                <li>Subtotal</li>
-                <li>Remover Item</li>
-            </ul>
-            {cart.map(cart =>
-                <CartItem key={cart.id}{...cart} />)}
-            <Link to="/form" className="generarOrden">Generar orden</Link>
-        </div>
+        <>
+            <section className="CartItem__section">
+                <div className="CartItem__div">
+                    <ul className="CartItem__categorias">
+                        <li>Producto</li>
+                        <li>Cantidad</li>
+                        <li>Precio</li>
+                        <li>Subtotal</li>
+                        <li>Remover Item</li>
+                    </ul>
+                    {cart.map(cart =>
+                        <CartItem key={cart.id}{...cart} />)}
+                </div>
+                <Link to="/form" className="generarOrden">Generar orden</Link>
+            </section>
+        </>
     )
 }
 export default CartList
