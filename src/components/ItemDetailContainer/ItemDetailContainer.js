@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import ItemDetail from "../ItemDetail/ItemDetail"
-import { bdd } from "../../services/firebase"
-import { getDoc, doc } from "firebase/firestore"
+// import { bdd } from "../../services/firebase"
+// import { getDoc, doc } from "firebase/firestore"
 import "../../sassCarpeta/index.scss"
 
 const ItemDetailContainer = () => {
@@ -11,18 +11,15 @@ const ItemDetailContainer = () => {
     const { productId } = useParams()
 
     useEffect(() => {
-        const docProdRef = doc(bdd, "products", productId)
-        getDoc(docProdRef)
-            .then(doc => {
-                const prodMaped = { id: doc.id, ...doc.data() }
-                setProds(prodMaped);
+        fetch('http://localhost:5050/products')
+            .then((response) => {
+                return response.json()
             })
-            .catch(error => {
-                console.log (error);
+            .then((articulos) => {
+                setProds(articulos)
             })
 
-    }, [productId])
-
+    }, [])
 
     return (
         <>
