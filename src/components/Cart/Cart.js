@@ -3,6 +3,7 @@ import { useContext } from "react"
 import { CartItemMsgContainer } from "../CartItem/CartItem";
 import "../../sassCarpeta/index.scss"
 import CartList from "../CartList/CartList";
+// import CartContext from "../CartContext/CartContext"
 
 const Cart = () => {
 

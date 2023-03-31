@@ -1,9 +1,9 @@
-import Counter from "../Counter/Counter"
-import { useContext, useState } from "react"
+/* import Counter from "../Counter/Counter"
+// import { useContext, useState } from "react"
 import CartContext from "../CartContext/CartContext"
 import { Link } from "react-router-dom"
 
-const ItemDetail = ({ cart, description, img, id, name, price, stock }) => {
+const ItemDetail = ({ cart, description,  id, name, price, stock }) => {
     const [quantAdded, setquantAdded] = useState(0)
     const { addProdToCart } = useContext(CartContext)
 
@@ -30,4 +30,4 @@ const ItemDetail = ({ cart, description, img, id, name, price, stock }) => {
         </div>
     )
 }
-export default ItemDetail
+export default ItemDetail */
